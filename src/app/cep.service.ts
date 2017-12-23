@@ -9,15 +9,9 @@ export class CepService {
   constructor(private http:HttpClient) { }
 
   buscar(cep:string){
-    /*return this.http.get(`https://viacep.com.br/ws/${cep}/json/`)
-        .toPromise()
-        .then(response => this.converterRespostaParaCep(response.json()));*/
-
-    this.http
+    return this.http
         .get(`https://viacep.com.br/ws/${cep}/json/`)
-        .subscribe(data => {
-          console.log(data);
-        });
+        .subscribe(data => this.converterRespostaParaCep(data));
   }
 
   private converterRespostaParaCep(cepNaResposta):Cep{
@@ -28,6 +22,7 @@ export class CepService {
     cep.bairro = cepNaResposta.bairro;
     cep.cidade = cepNaResposta.localidade;
     cep.estado = cepNaResposta.uf;
+
     return cep;
   }
 }

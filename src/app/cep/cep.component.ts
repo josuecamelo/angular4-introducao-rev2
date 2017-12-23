@@ -30,6 +30,7 @@ export class CepComponent implements OnInit {
           this.cep.cep = cep;
           alert('Não possível continuar a busca');
         })*/
+
     this.cepService.buscar(this.cep.cep);
   }
 }
