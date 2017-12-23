@@ -1,3 +1,4 @@
+//classe para descrever os detalhes do endereço referente ao cep
 export class Cep{
     cep:string;
     logradouro:string;
