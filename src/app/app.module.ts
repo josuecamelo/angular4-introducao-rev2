@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms'; //para usar item de formulario
 import { AppComponent } from './app.component';
 import { TaskListComponent } from './task-list/task-list.component';
+import { FormatCurrencyPipe } from './format-currency.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskListComponent
+    TaskListComponent,
+    FormatCurrencyPipe
   ],
   imports: [
     BrowserModule,
