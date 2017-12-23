@@ -12,13 +12,13 @@ export class AppComponent {
   tasks:Array<Task> = [];
 
   constructor() {
-    let taskService = new TaskService();
+    /*let taskService = new TaskService();
     this.tasks.push({
       name: 'Cozinhar',
       value: 200,
       date_launch: '2017-12-23'
     });
 
-    this.tasks = taskService.tasks;
+    this.tasks = taskService.tasks;*/
   }
 }
