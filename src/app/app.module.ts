@@ -8,6 +8,7 @@ import { FormatDatePipe } from './format-date.pipe';
 import { MyTaskDirective } from './my-task.directive';
 import { TaskNewComponent } from './task-new/task-new.component';
 import {TaskService} from "./task.service";
+import { CepComponent } from './cep/cep.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {TaskService} from "./task.service";
     FormatCurrencyPipe,
     FormatDatePipe,
     MyTaskDirective,
-    TaskNewComponent
+    TaskNewComponent,
+    CepComponent
   ],
   imports: [
     BrowserModule,
