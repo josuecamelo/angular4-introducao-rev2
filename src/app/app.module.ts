@@ -7,6 +7,7 @@ import { FormatCurrencyPipe } from './format-currency.pipe';
 import { FormatDatePipe } from './format-date.pipe';
 import { MyTaskDirective } from './my-task.directive';
 import { TaskNewComponent } from './task-new/task-new.component';
+import {TaskService} from "./task.service";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { TaskNewComponent } from './task-new/task-new.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [TaskService], //registrando o serviço
   bootstrap: [AppComponent]
 })
 export class AppModule { }
