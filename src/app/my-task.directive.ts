@@ -24,7 +24,7 @@ export class MyTaskDirective {
 
   @HostListener('click')
   onClick(){
-    alert(this.myTask)
+    alert(this.myTask.name)
   }
 
   changeColorTask(){
