@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import {Task} from "../task";
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-task-list',
@@ -8,13 +7,6 @@ import {Task} from "../task";
 })
 
 export class TaskListComponent {
+  @Input()
   tasks = [];
-  task:Task = {
-    name: "",
-    valor: 0
-  };
-  add(){
-    let task = Object.assign({}, this.task); //adicionando objeto vario no
-    this.tasks.push(task);
-  }
 }
