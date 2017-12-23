@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tarefas';
-  tasks = [];
-  task = "";
-
-  add(){
-    this.tasks.push(this.task);
-  }
 }

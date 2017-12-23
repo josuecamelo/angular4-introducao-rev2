@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-task-list',
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css']
 })
-export class TaskListComponent implements OnInit {
+export class TaskListComponent {
 
-  constructor() { }
 
-  ngOnInit() {
+  tasks = [];
+  task = "";
+
+  add(){
+    this.tasks.push(this.task);
   }
 
 }
