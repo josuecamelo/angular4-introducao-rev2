@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import {Task} from "../task";
+import {TaskService} from "../task.service";
 
 @Component({
   selector: 'app-task-new',
@@ -13,8 +14,12 @@ export class TaskNewComponent  {
     date_launch: '2017-09-09'
   };
 
-  @Input()
-  tasks = [];
+  tasks:Array<Task> = [];
+
+  constructor(private taskService:TaskService) {
+    this.tasks = this.taskService.tasks;
+  }
+
   add(){
     let task = Object.assign({}, this.task); //adicionando objeto vario no
     this.tasks.push(task);
