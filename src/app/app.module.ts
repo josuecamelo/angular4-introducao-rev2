@@ -4,12 +4,14 @@ import {FormsModule} from '@angular/forms'; //para usar item de formulario
 import { AppComponent } from './app.component';
 import { TaskListComponent } from './task-list/task-list.component';
 import { FormatCurrencyPipe } from './format-currency.pipe';
+import { FormatDatePipe } from './format-date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskListComponent,
-    FormatCurrencyPipe
+    FormatCurrencyPipe,
+    FormatDatePipe
   ],
   imports: [
     BrowserModule,
