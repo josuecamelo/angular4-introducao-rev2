@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Http, HttpClient } from '@angular/common/http';
 import {Cep} from './cep';
 import 'rxjs/add/operator/toPromise';
 
